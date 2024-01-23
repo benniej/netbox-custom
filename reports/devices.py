@@ -17,7 +17,7 @@ class JENNY_Cutomer_Sector(Report):
     def test_JCS_device_naming(self):
 
         for device in Device.objects.filter(tags="2"):
-            if re.match("^J-[A-Z]{3}-CZ2[0-5][0-9]-(UBT|LTU|WAV|MIK|MIM|CAM|RAD)-[5-9][0-9]\.[0-9]{0,3}(-[a-zA-Z0-9_-]*)?", str(device.name)):
+            if re.match("^J-[A-Z0-9]{3}-CZ2[0-5][0-9]-(UBT|LTU|WAV|MIK|MIM|CAM|RAD)-[5-9][0-9]\.[0-9]{0,3}(-[a-zA-Z0-9_-]*)?", str(device.name)):
                 self.log_success(device)
             else:
                 self.log_failure(device, "Check device name")

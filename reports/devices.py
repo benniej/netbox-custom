@@ -4,7 +4,7 @@ from extras.reports import Report
 from dcim.models import Device
 
 class JENNY_Radio_Sector(Report):
-    description = "Check various attributes on a Jenny Customer Sector"
+    description = "Check various attributes on a Jenny Radio Sector"
 
     def test_JRS_device_primary_IP(self):
 

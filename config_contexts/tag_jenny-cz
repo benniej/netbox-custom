@@ -1,7 +1,7 @@
 {
     "zabbix": {
         "templates": [
-            "Mikrotik by SNMP"
+            "JMikrotik by SNMP"
         ]
     }
 }
